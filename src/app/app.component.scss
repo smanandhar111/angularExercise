@@ -1,0 +1,54 @@
+
+.navigation {
+  display: flex;
+  border-bottom: 1px solid #bfbfbf;
+  justify-content: space-between;
+  padding: 10px 25px;
+  tabset {
+    ::ng-deep {
+      ul {
+        border: 0;
+
+        li a.nav-link {
+          color: #000;
+          &:hover {
+            border: transparent;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+          }
+          &.active {
+            border: transparent;
+            border-bottom: 3px solid #007bff;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .status-container {
+    display: flex;
+    .status-display {
+      align-self: center;
+    }
+    .btn-group {
+      display: flex;
+      align-self: center;
+
+      .btn.dropdown-toggle {
+        padding: 0 8px 0 5px;
+        height: 24px;
+        background: transparent;
+
+        &:hover {
+          background: #cccccc;
+        }
+      }
+    }
+  }
+
+}
+
+// Global Style
+a.cursor {
+  cursor: pointer;
+}
