@@ -1,0 +1,41 @@
+<div class="data-bar-comp">
+  <div class="left">
+    <button [disabled]="counter < 1" class="modified" (click)="countDown()">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <div class="indicator">{{counter + 1}}/{{employeeDataModel.length}}</div>
+
+    <button class="modified next" [disabled]="counter + 1 >= employeeDataModel.length" (click)="countUp()">
+      <i class="fa fa-arrow-right"></i>
+    </button>
+
+    <!--  rest:{{employeeDataModel[counter].name}}-->
+    <!--  other: {{employeeDataModel[counter].age}}-->
+    <!--  fav: {{employeeDataModel[counter].favLang}}-->
+    <div class="data-display">
+      <div class="top">{{employeeDataModel[counter].name}}</div>
+      <div class="bottom">
+        <span>{{employeeDataModel[counter].age}}</span>
+        <span>{{employeeDataModel[counter].favLang}}</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="right">
+    <div class="repeater" *ngFor="let status of statusBar">
+      <label for="{{status.title}}">{{status.title}}</label>
+      <a id="{{status.title}}" (click)="updateStatus(status.title)" class="cursor {{status.status}}">
+        <i class="fa {{status.iconClass}} {{status.status}}"></i>
+      </a>
+    </div>
+    <div class="data" *ngFor="let data of dataFlow">
+      <label for="data-link-container">{{data.label}}</label>
+      <div class="data-link-container" id="data-link-container">
+        <a class="cursor" *ngFor="let content of data.content">
+          <i class="fa {{content.iconClass}}"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

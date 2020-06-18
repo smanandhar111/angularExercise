@@ -1,0 +1,22 @@
+header {
+  border-bottom: 2px solid #bfbfbf;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    a {
+      padding: 10px 20px;
+    }
+    .line {
+      align-self: center;
+      border-right: 1px solid #cccccc;
+      height: 16px;
+    }
+  }
+  .right {
+    display: flex;
+    a {
+      padding: 10px;
+    }
+  }
+}
