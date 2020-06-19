@@ -23,18 +23,18 @@ export class DataBarComponent implements OnInit {
     }
   ];
   employeeDataModel: EmployeeDataModel[] = [
-    {name: 'John Doe', age: 41, favLang: 'Java'},
-    {name: 'Mike Milder', age: 41, favLang: 'JavaScript'},
-    {name: 'Joe Burns', age: 41, favLang: 'C+'},
-    {name: 'Shelly Khan', age: 41, favLang: 'HTML'},
-    {name: 'Kim Lin', age: 41, favLang: 'SCSS'},
-    {name: 'Sunny Mitchell', age: 41, favLang: 'Java'},
-    {name: 'Bob Zone', age: 41, favLang: 'JavaScript'},
-    {name: 'Bill Write', age: 41, favLang: 'HTML'},
-    {name: 'Papa Johns', age: 41, favLang: 'SCSS'},
-    {name: 'Jones Pale', age: 41, favLang: 'C+'},
-    {name: 'Adam Lipton', age: 41, favLang: 'Java'},
-    {name: 'Randy Box', age: 41, favLang: 'Java'},
+    {name: 'John Doe', age: 34, favLang: 'Frontend Developer'},
+    {name: 'Mike Milder', age: 32, favLang: 'Backend Developer'},
+    {name: 'Joe Burns', age: 25, favLang: 'Frontend Developer'},
+    {name: 'Shelly Khan', age: 26, favLang: 'DevOps Engineer'},
+    {name: 'Kim Lin', age: 28, favLang: 'UX Designer'},
+    {name: 'Sunny Mitchell', age: 43, favLang: 'Backend Developer'},
+    {name: 'Bob Zone', age: 36, favLang: 'Lead Frontend Developer'},
+    {name: 'Bill Write', age: 40, favLang: 'Business Owner'},
+    {name: 'Papa Johns', age: 26, favLang: 'Frontend Developer'},
+    {name: 'Jones Pale', age: 21, favLang: 'Quality Analyst'},
+    {name: 'Adam Lipton', age: 26, favLang: 'Frontend Developer'},
+    {name: 'Randy Box', age: 32, favLang: 'Quality Analyst'},
   ];
   constructor() { }
   countDown(): void {

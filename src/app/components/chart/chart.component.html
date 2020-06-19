@@ -1,0 +1,13 @@
+
+<div class="chart-container">
+  <div id="chart"></div>
+  <div class="controls">
+    <div class="chart-info">{{chartInfo}} {{unit | titlecase}}</div>
+  </div>
+  <button class="btn highs" (mouseenter)="OnElem2Mouseover()" (mouseleave)="OnElem2Mouseout()">Highs</button>
+  <button class="btn lows" (mouseover)="OnElem1Mouseover()" (mouseout)="OnElem1Mouseout()">Lows</button>
+
+  <button class="btn btn-primary switch-temp" (click)="switchTemp()">{{switchBtnText}} {{getUnits(unit)}}</button>
+</div>
+
+
