@@ -1,5 +1,5 @@
 <div class="data-bar-comp">
-  <div class="left">
+  <div class="team-info">
     <button [disabled]="counter < 1" class="modified" (click)="countDown()">
       <i class="fa fa-arrow-left"></i>
     </button>
@@ -19,7 +19,7 @@
   </div>
 
 
-  <div class="right">
+  <div class="state-indicators">
     <div class="repeater" *ngFor="let status of statusBar">
       <label for="{{status.title}}">{{status.title}}</label>
       <a id="{{status.title}}" (click)="updateStatus(status.title)" class="cursor {{status.status}}">

@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 $fontPath: 'src/assets/fonts/nunito';
+$appGrey: #cccccc;
+$appBlue: #007bff;
+$appWhite: #ffffff;
+$appBorder: #bfbfbf;
+$appInactive: #6b6969;
 @font-face {
   font-family: 'Nunito';
   src: url('src/assets/fonts/nunito/Nunito-Black.ttf') format('truetype');

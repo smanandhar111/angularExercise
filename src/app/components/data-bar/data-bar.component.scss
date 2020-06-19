@@ -1,10 +1,12 @@
+@import '../../../styles';
+
 .data-bar-comp {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #bfbfbf;
-  background: #ffffff;
-  .left {
+  border-bottom: 1px solid $appBorder;
+  background: $appWhite;
+  .team-info {
     display: flex;
       button.modified {
         border: none;
@@ -16,6 +18,9 @@
           border-right: 1px solid #ccc;
           padding-right: 25px;
         }
+        &[disabled] {
+          cursor: default;
+        }
       }
     .indicator {
       align-self: center;
@@ -25,7 +30,7 @@
       padding-left: 25px;
     }
   }
-  .right {
+  .state-indicators {
     display: flex;
     .repeater {
       display: flex;
@@ -46,22 +51,22 @@
         margin: auto;
 
         &.super {
-          background: #007bff;
+          background: $appBlue;
         }
 
         i {
           align-self: center;
          &.active {
-           color: #6b6969;
+           color: $appInactive;
          }
           &.selected {
-            color: #007bff;
+            color: $appBlue;
           }
           &.super {
-            color: #ffffff;
+            color: $appWhite;
           }
           &.inactive {
-            color: #cccccc;
+            color: $appGrey;
           }
         }
 
@@ -77,7 +82,7 @@
     a {
       padding-right: 10px;
       i {
-        color: #6b6969;
+        color: $appInactive;
       }
     }
   }
