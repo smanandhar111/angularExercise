@@ -1,9 +1,7 @@
 <app-header></app-header>
 <div class="navigation">
   <tabset #tabset class="tab-set-comp">
-    <tab *ngFor="let x of TabSet" heading="{{x.value}}">
-
-    </tab>
+    <tab *ngFor="let tab of tabSet" [heading]="tab.value" (selectTab)="tabSelected(tab.value)"></tab>
   </tabset>
   <div class="status-container">
     <span class="status-display">{{status}}</span>
@@ -13,12 +11,15 @@
       </button>
       <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right"
           role="menu" aria-labelledby="button-alignment">
-        <li *ngFor="let xx of dropDownList" role="menuitem">
-          <a class="dropdown-item" (click)="dropdownClicked(xx.value)" href="#">{{xx.value}}</a>
+        <li *ngFor="let list of dropDownList" role="menuitem">
+          <a class="dropdown-item" (click)="dropdownClicked(list.value)" href="#">{{list.value}}</a>
         </li>
       </ul>
     </div>
   </div>
 </div>
 <app-data-bar></app-data-bar>
-<app-chart></app-chart>
+
+<app-content [currentTab]="currentTab"
+             (routeToTab)="routeToTabOne($event)"></app-content>
+

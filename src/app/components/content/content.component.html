@@ -1,2 +1,13 @@
+<div class="content-container">
+  <ul>
+    <li>{{loadingTab}} is selected</li>
+  </ul>
 
+  <div class="tab-two-container" *ngIf="loadingTab === 'Tab2'">
+    <app-chart></app-chart>
+  </div>
+  <div class="tab-three-container" *ngIf="loadingTab === 'Tab3'">
+    <button class="btn btn-secondary" (click)="routeToTabOne(0)">Route to Tab1</button>
+  </div>
+</div>
 

@@ -18,7 +18,7 @@ import * as echarts from 'echarts';
     ContentComponent,
     HeaderComponent,
     DataBarComponent,
-    ChartComponent
+    ChartComponent,
   ],
   imports: [
     BrowserModule,

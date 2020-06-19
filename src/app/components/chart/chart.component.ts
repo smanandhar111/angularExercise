@@ -20,7 +20,7 @@ export class ChartComponent implements OnInit {
   myChart: any = null;
   unit = 'fahrenheit';
   chartInfo = `Highs and lows temperatures for next week in Irving, Tx in`;
-  switchBtnText = 'convert to';
+  switchBtnText = 'Convert to';
   ngOnInit(): void {
     this.initChart();
   }

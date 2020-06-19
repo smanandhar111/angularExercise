@@ -1,16 +1,21 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss']
 })
-export class ContentComponent implements OnInit {
-
+export class ContentComponent implements OnInit, OnChanges {
+  @Output() routeToTab: EventEmitter<number> = new EventEmitter<number>();
   constructor() { }
-  @Input() src: string;
+  @Input() currentTab: string;
+  loadingTab: string;
   ngOnInit(): void {
-    console.log(this.src)
   }
-
+  ngOnChanges(changes: SimpleChanges): void {
+    this.loadingTab = changes.currentTab.currentValue;
+  }
+  routeToTabOne(id: number): void {
+    this.routeToTab.emit(id);
+  }
 }
