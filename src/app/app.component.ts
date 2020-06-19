@@ -1,7 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {TabsetComponent} from 'ngx-bootstrap/tabs';
 import {TabsModel} from './tabs.model';
-import {CONTENT} from './content';
 
 @Component({
   selector: 'app-root',
@@ -10,21 +9,20 @@ import {CONTENT} from './content';
 })
 export class AppComponent implements OnInit {
   title = 'angular-exercise';
+  status = 'Status ?';
+  currentTab: string;
   @ViewChild('tabset', {static: false}) tabset: TabsetComponent;
   tabSet: TabsModel[] = [
     {value: 'Tab1'},
     {value: 'Tab2'},
     {value: 'Tab3'},
   ];
-  status = 'Status ?';
-  currentTab: string;
   dropDownList: TabsModel[] = [
     {value: 'Happy :)'},
     {value: 'Sad :('},
     {value: 'Excited :D'},
     {value: 'Bored :|'}
   ];
-  content: any;
   ngOnInit(): void {
     this.currentTab = 'Tab1';
   }

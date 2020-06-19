@@ -1,10 +1,12 @@
+@import '../../../styles';
+
 .chart-container {
   padding: 0 25px;
   #chart {
     height: 350px;
   }
   .btn {
-    color: #fff;
+    color: $appWhite;
     cursor: auto;
     &.highs {
       margin: 0 10px 0 45%;

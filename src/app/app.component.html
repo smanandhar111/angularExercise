@@ -3,11 +3,14 @@
   <tabset #tabset class="tab-set-comp">
     <tab *ngFor="let tab of tabSet" [heading]="tab.value" (selectTab)="tabSelected(tab.value)"></tab>
   </tabset>
+
   <div class="status-container">
     <span class="status-display">{{status}}</span>
+
     <div class="btn-group" dropdown placement="bottom right">
       <button id="button-alignment" dropdownToggle type="button"
-              class="btn dropdown-toggle" aria-controls="dropdown-alignment"><span class="caret"></span>
+              class="btn dropdown-toggle" aria-controls="dropdown-alignment">
+        <span class="caret"></span>
       </button>
       <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right"
           role="menu" aria-labelledby="button-alignment">
