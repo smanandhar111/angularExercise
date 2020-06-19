@@ -1,24 +1,28 @@
+@import '../styles';
 
 .navigation {
   display: flex;
-  border-bottom: 1px solid #bfbfbf;
+  border-bottom: 1px solid $appBorder;
   justify-content: space-between;
   padding: 10px 25px;
+  background: $appWhite;
   tabset {
     ::ng-deep {
       ul {
         border: 0;
 
         li a.nav-link {
-          color: #000;
+          color: #000000;
+          margin-right: 10px;
           &:hover {
             border: transparent;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            border-bottom: 3px solid #87c1ff;
           }
           &.active {
             border: transparent;
-            border-bottom: 3px solid #007bff;
+            border-bottom: 3px solid $appBlue;
             font-weight: 600;
           }
         }
@@ -40,7 +44,7 @@
         background: transparent;
 
         &:hover {
-          background: #cccccc;
+          background: $appGrey;
         }
       }
     }

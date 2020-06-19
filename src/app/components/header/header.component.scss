@@ -1,19 +1,20 @@
+@import '../../../styles';
+
 header {
-  border-bottom: 2px solid #bfbfbf;
+  padding: 5px 25px;
+  border-bottom: 2px solid $appBorder;
   display: flex;
   justify-content: space-between;
-  .left {
+  background: $appWhite;
+  .menu {
     display: flex;
-    a {
-      padding: 10px 20px;
-    }
-    .line {
+    a.line {
+      border-right: 1px solid $appGrey;
+      padding-right: 20px;
       align-self: center;
-      border-right: 1px solid #cccccc;
-      height: 16px;
     }
   }
-  .right {
+  .notifications {
     display: flex;
     a {
       padding: 10px;

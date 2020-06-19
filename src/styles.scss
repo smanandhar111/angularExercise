@@ -1,5 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+$fontPath: 'src/assets/fonts/nunito';
+$appGrey: #cccccc;
+$appBlue: #007bff;
+$appWhite: #ffffff;
+$appBorder: #bfbfbf;
+$appInactive: #6b6969;
+@font-face {
+  font-family: 'Nunito';
+  src: url('src/assets/fonts/nunito/Nunito-Black.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-BlackItalic.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-Bold.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-BoldItalic.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-ExtraBold.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-ExtraBoldItalic.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-ExtraLight.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-ExtraLightItalic.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-Italic.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-Light.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-LightItalic.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-Regular.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-SemiBold.ttf') format('truetype');
+  src: url('src/assets/fonts/nunito/Nunito-SemiBoldItalic.ttf') format('truetype');
+}
+
 a.cursor {
   cursor: pointer;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  background: #f2f2f2;
 }
 
