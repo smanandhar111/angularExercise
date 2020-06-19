@@ -22,34 +22,17 @@ export class AppComponent implements OnInit {
     {value: 'Happy :)'},
     {value: 'Sad :('},
     {value: 'Excited :D'},
-    {value: 'Crying :\'('}
+    {value: 'Bored :|'}
   ];
   content: any;
   ngOnInit(): void {
     this.currentTab = 'Tab1';
-    this.content = this.parseItems(CONTENT);
   }
   tabSelected(tab: string): void {
     this.currentTab = tab;
-    this.content = this.parseItems(CONTENT);
   }
-
   dropdownClicked(val: string): void {
     this.status = val;
-  }
-  parseItems(input) {
-    const items = {
-      Tab1: [],
-      Tab2: [],
-      Tab3: []
-    };
-    let content: string;
-    for (const item of input) {
-      if (this.currentTab === item[0]) {
-        content = item[1];
-      }
-    }
-    return content;
   }
   routeToTabOne(event): void {
     this.tabset.tabs[event].active = true;

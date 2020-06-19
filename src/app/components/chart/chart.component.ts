@@ -54,19 +54,19 @@ export class ChartComponent implements OnInit {
   }
   getForCast(src: number): Array<string> {
     const keys = [];
-    this.forCastData.forEach((x) => {
-      let abc;
-      abc = Object.values(x)[src];
-      keys.push(abc);
+    this.forCastData.forEach((data) => {
+      let val;
+      val = Object.values(data)[src];
+      keys.push(val);
     });
     return keys;
   }
   switchTemp(): void {
-    this.forCastData = this.forCastData.map((o) => {
+    this.forCastData = this.forCastData.map((data) => {
       return ({
-        ...o,
-        highTemp: this.convertUnit(o.highTemp),
-        lowTemp: this.convertUnit(o.lowTemp)
+        ...data,
+        highTemp: this.convertUnit(data.highTemp),
+        lowTemp: this.convertUnit(data.lowTemp)
       });
     });
     const option = {

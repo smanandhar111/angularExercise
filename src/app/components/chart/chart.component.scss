@@ -1,13 +1,13 @@
 .chart-container {
   padding: 0 25px;
   #chart {
-    height: 400px;
+    height: 350px;
   }
   .btn {
     color: #fff;
-
+    cursor: auto;
     &.highs {
-      margin: 0 10px 0 50%;
+      margin: 0 10px 0 45%;
       background: brown;
     }
     &.lows {
@@ -25,7 +25,8 @@
     }
   }
   button.switch-temp {
-    margin: 20px 0 0 50%;
+    cursor: pointer;
+    margin: 20px 0 0 45%;
   }
 }
 

@@ -4,6 +4,7 @@
   border-bottom: 1px solid #bfbfbf;
   justify-content: space-between;
   padding: 10px 25px;
+  background: #ffffff;
   tabset {
     ::ng-deep {
       ul {
@@ -11,10 +12,12 @@
 
         li a.nav-link {
           color: #000;
+          margin-right: 10px;
           &:hover {
             border: transparent;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            border-bottom: 3px solid #87c1ff;
           }
           &.active {
             border: transparent;
