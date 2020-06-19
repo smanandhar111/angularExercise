@@ -1,0 +1,32 @@
+.chart-container {
+  padding: 0 25px;
+  #chart {
+    height: 400px;
+  }
+  .btn {
+    color: #fff;
+
+    &.highs {
+      margin: 0 10px 0 50%;
+      background: brown;
+    }
+    &.lows {
+      background: #39306f;;
+    }
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    .chart-info {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  button.switch-temp {
+    margin: 20px 0 0 50%;
+  }
+}
+
+

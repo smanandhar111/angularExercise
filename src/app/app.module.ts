@@ -9,20 +9,24 @@ import {FormsModule} from '@angular/forms';
 import { ContentComponent } from './components/content/content.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DataBarComponent } from './components/data-bar/data-bar.component';
-
+import { ChartComponent } from './components/chart/chart.component';
+import {NgxEchartsModule} from 'ngx-echarts';
+import * as echarts from 'echarts';
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
     HeaderComponent,
-    DataBarComponent
+    DataBarComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     TabsModule.forRoot(),
     BsDropdownModule.forRoot(),
-    FormsModule
+    FormsModule,
+    NgxEchartsModule.forRoot({echarts})
   ],
   providers: [],
   bootstrap: [AppComponent]
